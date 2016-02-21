@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  amount: 9.99
+  txn_type: MyString
+  remarks: MyString
+
+two:
+  user_id: 1
+  amount: 9.99
+  txn_type: MyString
+  remarks: MyString

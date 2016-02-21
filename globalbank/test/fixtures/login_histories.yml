@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  last_login: 2016-02-18 22:56:37
+
+two:
+  user_id: 1
+  last_login: 2016-02-18 22:56:37

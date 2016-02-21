@@ -1,0 +1,398 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@charset "utf-8";
+
+
+body{
+	margin:0;
+	color:#232323;
+	background:#EFF5FB;
+}
+
+
+ul{
+	margin:0; 
+	padding:0; 
+	list-style-type:none;
+	font-size:0;
+	line-height:0;
+}
+
+
+.spacer{
+	clear:both; 
+	font-size:0; 
+	line-height:0;
+}
+.more
+{
+	font:normal 11px/18px Arial, Helvetica, sans-serif;
+	color:#00d09d;
+	text-decoration:none;
+	padding-left:230px;
+}
+.style1{color:#00d09d;}
+
+
+#top_links
+{
+	margin:0 auto;
+	padding:0px;
+	width:900px;
+	height:40px;
+}
+#top_linksin
+{
+	padding:10px 0 0 0;
+	width:310px;
+	height:18px;
+	float:right;
+}
+
+#top_linksin ul
+{
+	list-style:none;
+	margin:0 0 0 40px;
+}
+#top_linksin ul li
+{
+	font:normal 11px/10px Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	border-right:#7f7f7f 1px solid;
+	padding:0 15px;
+	float:left;
+}
+#top_linksin ul li a
+{
+	text-decoration:none;
+	display:block;
+	color:#7f7f7f;
+}
+#top_linksin ul li a:hover
+{
+	text-decoration:none;
+	display:block;
+	color:#FFFFFF;
+}
+
+#header
+{
+	margin:0 auto;
+	background:#000 url(images/globe_00.png) 0 0 no-repeat;
+	width:897px;
+	height:282px;
+	color:#0B0B61;
+}
+#header h1
+{
+	font:bold 44px/18px Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	padding:100px 0 0 380px;
+}
+#header h2
+{
+	font:bold italic 24px/18px Arial, Helvetica, sans-serif;
+	color:#ababab;
+	padding:20px 0 0 380px;
+}
+
+#navigation
+{
+	margin:0 auto;
+	width:896px;
+	height:40px;
+	background:#000;
+	border:1px solid #282828;
+}
+#navigation ul
+{
+	list-style:none;
+}
+#navigation ul li
+{
+	color:#adadad;
+	float:left;
+	text-align:center;
+	font:bold 15px/40px Arial, Helvetica, sans-serif;
+	width:127px;
+	border-right:1px solid #282828;
+}
+#navigation ul li a
+{
+	text-decoration:none;
+	display:block;
+	color:#adadad;
+}
+#navigation ul li a:hover
+{
+	color:#FFFFFF;
+}
+#navigation ul li.last
+{
+	border:none;
+	float:left;
+}
+
+#content1
+{
+	width:897px; 
+	margin:0 auto; 
+	background:url(images/globe_05.jpg) 0 0 repeat-y;
+}
+#content1 h1
+{
+	font:bold italic 22px/79px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	padding-left:30px;
+}
+#content1 p
+{
+	font:normal 12px/18px Arial, Helvetica, sans-serif;
+	color:#b2b2b2;
+	padding:5px 15px 0 15px;
+}
+.con
+{
+	background:url(images/globe_06.jpg) 0 0 repeat-y;
+	width:290px;
+}
+#heade1
+{
+	width:167px;
+	height:79px;
+	background:url(images/image_03.gif) 20px 10px no-repeat;
+	padding-left:90px;
+}
+#heade2
+{
+	width:167px;
+	height:79px;
+	background:url(images/image_04.gif) 20px 10px no-repeat;
+	padding-left:90px;
+}
+#heade3
+{
+	width:167px;
+	height:79px;
+	background:url(images/image_05.gif) 20px 5px no-repeat;
+	padding-left:90px;
+}
+#services
+{
+	width:257px;
+	padding:10px;
+}
+#services h1
+{
+	font:bold italic 20px/25px Arial, Helvetica, sans-serif;
+	color:#333333;
+}
+#services ul
+{
+	list-style:none;
+	margin-left:8px;
+}
+#services ul li
+{
+	font:normal 12px/22px Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	display:block;
+	padding:0 0 4px 16px;
+	background:url(images/bullet.png) left center no-repeat;
+}
+#services ul li a
+{
+	text-decoration:none;
+	display:block;
+	color:#7f7f7f;
+}
+#services ul li a:hover
+{
+	text-decoration:none;
+	display:block;
+	color:#000000;
+}
+#welcome
+{
+	width:287px;
+	padding:10px;
+}
+#welcome h1
+{
+	font:bold italic 20px/25px Arial, Helvetica, sans-serif;
+	color:#333333;
+}
+#welcome p
+{
+	font:normal 12px/18px Arial, Helvetica, sans-serif;
+	color:#7f7f7f;
+}
+#news
+{
+	width:257px;
+	padding:10px;
+}
+#news h1
+{
+	font:bold italic 20px/25px Arial, Helvetica, sans-serif;
+	color:#333333;
+}
+.img
+{
+	float:left;
+	padding-right:10px;
+}
+#news h2
+{
+	font:bold 12px/18px Arial, Helvetica, sans-serif;
+	color:#333333;
+}
+#news p
+{
+	font:normal 12px/18px Arial, Helvetica, sans-serif;
+	color:#7f7f7f;
+}
+
+#footer_navigation
+{
+	width:500px;
+	height:30px;
+	margin:0 auto;
+}
+#footer_navigation ul li
+{
+	width:80px;
+	font: normal 12px/30px Arial, Helvetica, sans-serif;
+	color:#7d9942;
+	float:left;
+}
+#footer_navigation ul li a
+{
+	text-decoration:none;
+	color:#7f7f7f;
+	height:30px;
+}
+#footer_navigation ul li a:hover
+{
+	text-decoration:none;
+	color:#ffffff;
+	height:49px;
+}
+#footer_copyright
+{
+	color: #7f7f7f;
+	font: normal 11px/30px Arial, Helvetica, sans-serif;
+	margin:0 auto;
+	text-align:center;
+}
+
+#footer_design
+{
+	color: #ffffff;
+	font: normal 11px/25px Arial, Helvetica, sans-serif;
+	margin:0 auto;
+	text-align:center;
+	width:100%;
+	background:#000000;
+}
+#footer_design a
+{
+	color: #b6ff06;
+	text-decoration:none;
+}
+#footer_design a:hover
+{
+	color: #b6ff06;
+	text-decoration:underline;
+}
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 400px;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: 30px
+}
+
+
+.submit {
+    background-color: #5882FA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width : 250px;
+    height: 50px;
+}
+
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+
+#fancytable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#fancytable td, #fancytable th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#fancytable tr:nth-child(even){background-color: #f2f2f2}
+
+#fancytable tr:hover {background-color: #ddd;}
+
+#fancytable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #5882FA;
+    color: white;
+}

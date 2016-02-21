@@ -1,0 +1,31 @@
+<%= form_for(@transaction)  do |f| %>
+  <% if @transaction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+      <% @account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="welcome">
+    <%= f.label  "Current balance in your account is" %> <%= @account.amount %><br>
+   
+    <br>
+    <%= f.label "Transaction amount" %><br>
+    <%= f.text_field :amount, :step => 'any' %><br>
+
+    <%= f.label "Transaction Type"%><br>
+    <%= f.text_field :txn_type, readonly:true %><br>
+     
+    <%= f.label :remarks%><br>
+    <%= f.text_field :remarks %><br>
+
+  </div>
+  <div class=actions">
+     <%= f.submit "Submit", :class => 'submit' %>
+  </div>
+<% end %>

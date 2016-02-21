@@ -1,0 +1,41 @@
+<div id="header">
+	<h1>Global Bank<span class="style1"></span></h1>
+    <h2>ExtraOrdinary Service</h2>	
+
+</div>
+
+<% if logged_in? %>
+ 
+  <div id="navigation">
+      <ul>
+         <% if not_have_account?%> 	
+  	     <li><a href="/accounts/new">New Account</a></li>          
+             <li>Balance</li>
+             <li>Deposit</li>
+             <li>Withdraw</li>
+             <li>Transfer</li>
+             <li>Close A/C</li>
+          
+          <%elsif is_account_closed? %>
+             <li><a href="/balance/show">Balance</a></li>
+             <li>Deposit</li>
+             <li>Withdraw</li>
+             <li>Transfer</li>
+             <li>Close A/C</li>
+          <% else %>     
+             <li><a href="/balance/show">Balance</a></li>
+             <li><a href="/deposit/new">Deposit</a></li>
+             <li><a href="/withdraw/new">Withdraw</a></li>
+             <li><a href="/transfer/new">Transfer</a></li>
+             <li><a href="/closeac/new">Close A/C</a></li>
+         <% end %>
+         
+         <li><a href="/logout">Log out</a></li>
+
+      </ul>
+  </div>
+
+<% else %>
+          <li><%= link_to "Log in", login_path %></li>
+ <% end %>
+

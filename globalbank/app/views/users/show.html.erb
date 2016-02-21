@@ -1,0 +1,54 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>       
+        Welcome <%= @user.name %>!
+      </h1>
+    </section>
+	
+  </aside>
+</div>
+
+<div class="row">
+	<table style="width:897px; background:#FFFFFF; margin:0 auto;">
+		<tr>
+			<td width="250" valign="top" style="border-right:#666666 1px dotted;">
+				<div id="services"><br>
+					Global Bank does not send requests for Internet Banking Login ID, Password, Credit/Debit card numbers, Bank account numbers, or other sensitive financial information by e-mail. In case of any queries or clarifications, Click call us to inform us about the message and related details.
+					<br>
+<p> It is important to use up-to-date Anti-virus software and a personal firewall.</p>
+<br>
+				</div>
+			</td>
+
+			<td width="275" valign="top" style="border-right:#666666 1px dotted;">
+
+<br><br><br>
+  <table id="fancytable">
+    <tr>
+     <td>Your last login was on</td>
+     <td><%= @login_history.last_login %></td>
+    </tr>
+    <tr>
+      <% if @account.nil? %> 
+        <td colspan="2"><b>You do not have an account.</b><br>
+                        To start banking with us, please create an account for yourself</td>
+      <% else %>
+         <td>current balance on your account</td>
+         <% if @account.amount.nil? %>
+           <td>0</td>
+         <% else %>
+            <td><%= @account.amount %></td>
+         <% end %>
+      <% end %>
+    </tr>
+    <% if !@account.nil? && @account.status != /closed/i %>
+       <tr>
+            <td colspan="2"><b>Your account is closed</b>. <br>Please contact ur branch to refund your money or to reopen it.<br></td>
+       </tr>
+     <% end %>
+   </table> 
+  </td>				
+  </table>
+</div>

@@ -1,0 +1,18 @@
+<h1>Listing Transaction</h1>
+
+<table id="fancytable">
+  <tbody>
+    <tr><th>User Id</th><th>Amount</th><th>Type</th><th>Remarks</th><th>Date</th></tr>
+    <% @transactions.each do |transaction| %>
+      <tr>
+        <td><%= transaction.user_id %></td>
+        <td><%= transaction.amount %></td>
+        <td><%= transaction.txn_type %></td>
+        <td><%= transaction.remarks %></td>
+        <td><%= transaction.created_at %></td>        
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+
